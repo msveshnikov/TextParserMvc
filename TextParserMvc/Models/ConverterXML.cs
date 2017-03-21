@@ -5,8 +5,11 @@ using System.Web;
 
 namespace TextParserMvc.Models
 {
-    public class Text
+    public class ConverterXML: IConvert
     {
-        public List<Sentence> sentences { get; set; }
+        public string Convert(Text text)
+        {
+            return "";
+        }
     }
 }

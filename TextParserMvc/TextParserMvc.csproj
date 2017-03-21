@@ -170,6 +170,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ConverterXML.cs" />
+    <Compile Include="Models\ConverterCSV.cs" />
+    <Compile Include="Models\Interfaces\IConvert.cs" />
+    <Compile Include="Models\Parser.cs" />
     <Compile Include="Models\Sentence.cs" />
     <Compile Include="Models\Text.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -196,6 +200,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="README.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -222,7 +227,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

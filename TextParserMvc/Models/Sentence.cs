@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TextParserMvc.Models
 {
-    class Sentence
+    public class Sentence
     {
         private List<string> words;
 

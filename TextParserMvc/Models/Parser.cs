@@ -5,8 +5,11 @@ using System.Web;
 
 namespace TextParserMvc.Models
 {
-    public class Text
+    public class Parser
     {
-        public List<Sentence> sentences { get; set; }
+        public Text Parse(string text)
+        {
+            return new Text();
+        }
     }
 }
