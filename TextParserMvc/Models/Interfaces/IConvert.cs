@@ -7,7 +7,7 @@ using TextParserMvc.Models;
 
 namespace TextParserMvc
 {
-    interface IConvert
+    public interface IConvert
     {
         string Convert(Text text);
     }

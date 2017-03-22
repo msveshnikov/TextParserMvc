@@ -1,4 +1,6 @@
-﻿To run the sample - open solution and press Run button.
+﻿
+
+To run the sample - open solution and press Run button.
 After page opens, paste your text in the form and press Download XML or Download CSV
 
 

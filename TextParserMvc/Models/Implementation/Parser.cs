@@ -10,7 +10,7 @@ namespace TextParserMvc.Models
         public Text Parse(string text)
         {
             Text result = new Text();
-            result.Sentences=new List<Sentence>();
+            result.Sentences = new List<Sentence>();
 
             var sentences = text.Split(new string[] { ".", "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries);
             foreach (string s in sentences)
