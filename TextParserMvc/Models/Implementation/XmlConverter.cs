@@ -8,7 +8,7 @@ using System.Xml;
 
 namespace TextParserMvc.Models
 {
-    public class ConverterXML : IConvert
+    public class XmlConverter : IConvert
     {
         public string Convert(Text text)
         {

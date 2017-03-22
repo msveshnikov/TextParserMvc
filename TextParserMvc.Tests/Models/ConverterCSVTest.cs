@@ -27,7 +27,7 @@ namespace TextParserMvc.Tests
             Parser parser = new Parser();
             Text text = parser.Parse(@"Mary had a little lamb. Peter called for the wolf, and Aesop came.
                  Cinderella likes shoes.");
-            IConvert converter = new ConverterCSV();
+            IConvert converter = new CsvConverter();
 
             // Act
             string csv = converter.Convert(text);

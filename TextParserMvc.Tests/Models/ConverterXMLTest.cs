@@ -20,7 +20,7 @@ namespace TextParserMvc.Tests
             Parser parser = new Parser();
             Text text = parser.Parse(@"Mary had a little lamb. Peter called for the wolf, and Aesop came.
                  Cinderella likes shoes.");
-            IConvert converter = new ConverterXML();
+            IConvert converter = new XmlConverter();
 
             // Act
             string xml = converter.Convert(text);

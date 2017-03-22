@@ -170,8 +170,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Implementation\ConverterXML.cs" />
-    <Compile Include="Models\Implementation\ConverterCSV.cs" />
+    <Compile Include="Models\Implementation\XmlConverter.cs" />
+    <Compile Include="Models\Implementation\CsvConverter.cs" />
     <Compile Include="Models\Interfaces\IConvert.cs" />
     <Compile Include="Models\Implementation\Parser.cs" />
     <Compile Include="Models\Sentence.cs" />

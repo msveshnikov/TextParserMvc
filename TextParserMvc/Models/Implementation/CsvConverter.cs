@@ -5,7 +5,7 @@ using System.Web;
 
 namespace TextParserMvc.Models
 {
-    public class ConverterCSV : IConvert
+    public class CsvConverter : IConvert
     {
         public string Convert(Text text)
         {
