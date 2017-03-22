@@ -10,11 +10,11 @@ namespace TextParserMvc.Tests
 {
 
     [TestClass]
-    public class ConverterXMLTest
+    public class XmlConverterTest
     {
 
         [TestMethod]
-        public void TestConvert()
+        public void TestXml()
         {
             // Arrange
             Parser parser = new Parser();

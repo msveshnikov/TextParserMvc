@@ -82,11 +82,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\ConverterXMLTest.cs" />
+    <Compile Include="Models\XmlConverterTest.cs" />
     <Compile Include="Models\ParserTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
-    <Compile Include="Models\ConverterCSVTest.cs" />
+    <Compile Include="Models\CsvConverterTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />

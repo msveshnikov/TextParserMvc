@@ -4,21 +4,25 @@
 
 <div class="jumbotron">
     <h1>Text Parser</h1>
-    <p class="lead">The following is a small coding exercise. You have to provide a working program that fulfils a
-number of requirements. The assessment of your answer will be based on fulfilment of
-functionality requirements and the quality of the implementation.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            The basic requirement is to provide a program that can convert text into either XML format-ted
-            data or comma separated (CSV) data. The text is to be parsed, broken into sentences and words
-            and the words have to be sorted.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    <div class="col-md-24">
+        @using (Html.BeginForm())
+        {
+            <fieldset>
+                <p>
+                    <label for="text">Enter text here:</label>
+                    <br />
+                    @Html.TextArea("text", string.Empty, 20, 100, null) 
+                    @Html.ValidationMessage("text")
+
+                    <input type="submit" name="Xml" value="Download XML" />
+                    <input type="submit" name="Csv" value="Download CSV" />
+                </p>
+            </fieldset>
+        }
     </div>
-   
+
 </div>

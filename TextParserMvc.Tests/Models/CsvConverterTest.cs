@@ -8,20 +8,14 @@ using System.Text.RegularExpressions;
 namespace TextParserMvc.Tests
 {
     /// <summary>
-    /// Summary description for UnitTest1
+    /// Test CsvConverter with solution requirements
     /// </summary>
     [TestClass]
-    public class ConverterCSVTest
+    public class CsvConverterTest
     {
-        public ConverterCSVTest()
-        {
-            //
-            // TODO: Add constructor logic here
-            //
-        }
 
         [TestMethod]
-        public void TestConvert()
+        public void TestCsv()
         {
             // Arrange
             Parser parser = new Parser();
