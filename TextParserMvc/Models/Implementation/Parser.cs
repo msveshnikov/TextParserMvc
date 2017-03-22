@@ -11,7 +11,9 @@ namespace TextParserMvc.Models
         {
             Text result = new Text();
             result.Sentences = new List<Sentence>();
-
+            
+            // simple but not so effective solution
+            // if huge texts need to be parsed, replace with some serialized approach
             var sentences = text.Split(new string[] { ".", "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries);
             foreach (string s in sentences)
             {
