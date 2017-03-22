@@ -7,6 +7,9 @@ using System.Web.Mvc;
 
 namespace TextParserMvc
 {
+    /*
+     * Use this attribute when you need several submit buttons in one form
+     */
     public class HttpParamActionAttribute : ActionNameSelectorAttribute
     {
         public override bool IsValidName(ControllerContext controllerContext, string actionName, MethodInfo methodInfo)

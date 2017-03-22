@@ -8,7 +8,7 @@
 </div>
 
 <div class="row">
-    <div class="col-md-24">
+    <div class="col-md-36">
         @using (Html.BeginForm())
         {
             <fieldset>
@@ -17,7 +17,7 @@
                     <br />
                     @Html.TextArea("text", string.Empty, 20, 100, null) 
                     @Html.ValidationMessage("text")
-
+                 
                     <input type="submit" name="Xml" value="Download XML" />
                     <input type="submit" name="Csv" value="Download CSV" />
                 </p>
