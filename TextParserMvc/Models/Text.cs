@@ -7,6 +7,6 @@ namespace TextParserMvc.Models
 {
     public class Text
     {
-        public List<Sentence> sentences { get; set; }
+        public List<Sentence> Sentences { get; set; }
     }
 }

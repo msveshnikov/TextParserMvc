@@ -9,7 +9,19 @@ namespace TextParserMvc.Models
     {
         public Text Parse(string text)
         {
-            return new Text();
+            Text result = new Text();
+            result.Sentences=new List<Sentence>();
+
+            var sentences = text.Split(new string[] { ".", "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries);
+            foreach (string s in sentences)
+            {
+                Sentence sentence = new Sentence();
+                var words = s.Split(new string[] { ",", " " }, StringSplitOptions.RemoveEmptyEntries);
+                sentence.Words = words.ToList();
+                result.Sentences.Add(sentence);
+            }
+
+            return result;
         }
     }
 }
