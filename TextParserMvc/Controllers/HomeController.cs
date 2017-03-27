@@ -20,7 +20,7 @@ namespace TextParserMvc.Controllers
         [ValidateInput(false)]
         public ActionResult Csv(TextModel model)
         {
-            return processRequest(model.text, "Converted.csv", new CsvConverter());
+            return processRequest(model.Text, "Converted.csv", new CsvConverter());
         }
 
 
@@ -29,7 +29,7 @@ namespace TextParserMvc.Controllers
         [ValidateInput(false)]
         public ActionResult Xml(TextModel model)
         {
-            return processRequest(model.text, "Converted.xml", new XmlConverter());
+            return processRequest(model.Text, "Converted.xml", new XmlConverter());
         }
 
         private ActionResult processRequest(string textToParse, string fileName, IConvert converter)
